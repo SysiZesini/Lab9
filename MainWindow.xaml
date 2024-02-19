@@ -5,8 +5,84 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab10"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Controls" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"></ColumnDefinition>
+            <ColumnDefinition Width="0.75*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" >
+            <Expander Header="Company">
+                <StackPanel Background="LightGray">
+                    <RadioButton GroupName="company_group" IsChecked="True">Lnit</RadioButton>
+                    <RadioButton GroupName="company_group">SKB</RadioButton>
+                    <RadioButton GroupName="company_group">Rostech</RadioButton>
+                    <RadioButton GroupName="company_group">RTK</RadioButton>
+                    <RadioButton GroupName="company_group">Cisco</RadioButton>
+                    <RadioButton GroupName="company_group">Asbis</RadioButton>
+                    <RadioButton GroupName="company_group">Lnit</RadioButton>
+                    <RadioButton GroupName="company_group">SKB</RadioButton>
+                    <RadioButton GroupName="company_group">Rostech</RadioButton>
+                    <RadioButton GroupName="company_group">RTK</RadioButton>
+                    <RadioButton GroupName="company_group">Cisco</RadioButton>
+                    <RadioButton GroupName="company_group">Asbis</RadioButton>
+                    <RadioButton GroupName="company_group">Lnit</RadioButton>
+                    <RadioButton GroupName="company_group" >Lnit</RadioButton>
+                    <RadioButton GroupName="company_group">SKB</RadioButton>
+                    <RadioButton GroupName="company_group">Rostech</RadioButton>
+                    <RadioButton GroupName="company_group">RTK</RadioButton>
+                    <RadioButton GroupName="company_group">Cisco</RadioButton>
+                    <RadioButton GroupName="company_group">Asbis</RadioButton>
+                    <RadioButton GroupName="company_group">Lnit</RadioButton>
+                    <RadioButton GroupName="company_group" >Lnit</RadioButton>
+                    <RadioButton GroupName="company_group">SKB</RadioButton>
+                    <RadioButton GroupName="company_group">Rostech</RadioButton>
+                    <RadioButton GroupName="company_group">RTK</RadioButton>
+                    <RadioButton GroupName="company_group">Cisco</RadioButton>
+                    <RadioButton GroupName="company_group">Asbis</RadioButton>
+                    <RadioButton GroupName="company_group">Lnit</RadioButton>
+                </StackPanel>
+            </Expander>
+
+        </StackPanel>
+        <GroupBox Header="Compiler" Grid.Row="0" Grid.Column="1" Padding="5">
+            <StackPanel x:Name="PanelCompile" >
+                <CheckBox FontSize="15"  x:Name="Comp1" IsChecked="True" Content="VS"/>
+                <CheckBox FontSize="15" x:Name="Comp2" IsChecked="False" Content="VSC"/>
+                <CheckBox FontSize="15" x:Name="Comp3" IsChecked="False" Content="XCode"/>
+                <CheckBox FontSize="15" x:Name="Comp4" IsChecked="False" Content="PyCharm"/>
+                <CheckBox FontSize="15" x:Name="Comp5" IsChecked="False" Content="Spyder"/>
+                <CheckBox FontSize="15" x:Name="Comp6" IsChecked="True" Content="Pydev"/>
+                <CheckBox FontSize="15" x:Name="Comp7" IsChecked="False" Content="Code Block"/>
+                <CheckBox FontSize="15" x:Name="Comp8" IsChecked="False" Content="Dev C++"/>            
+            </StackPanel>
+        </GroupBox>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="send_button"  FontSize="15" FontFamily="Arial Black" Grid.Row="0" Grid.Column="0" Content="Save" Background="#8E9F60" Foreground="#3D4653"  Margin="60,20,60,20" />
+            <Button Name="drop_button" FontSize="15" FontFamily="Arial Black" Grid.Row="0" Grid.Column="1" Content="Cancel" Background="#FFAF5D44" Foreground="#3D4653" Margin="60,20,60,20" /> 
+        </Grid>
+        <WrapPanel Grid.Row="2" Grid.Column="1" x:Name="PanelX">
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X1" IsChecked="False" Content="Database Administrator"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X2" IsChecked="False" Content="Network Administrator"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X3" IsChecked="False" Content="Security Administrator Software"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X4" IsChecked="False" Content="Analyst Software Architect"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X5" IsChecked="False" Content="Lead Programmer"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X6" IsChecked="False" Content="Content Manager"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X7" IsChecked="False" Content="Tester Technical Writer"/>
+            <CheckBox FontSize="15" Margin="0,0,10,0" x:Name="X8" IsChecked="False" Content="System Analyst"/>
+        </WrapPanel>
         
     </Grid>
 </Window>
